@@ -1,0 +1,192 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+/*----------------------- COLORS--------------*/
+:root {
+    --txt-clr: #fff;
+    --btn-clr: #FFFBFB;
+    --txt2-clr: #264653;
+    --transition: all 0.3s linear;
+}
+
+/*--------------------WRAPPER---------------------*/
+.wrapper {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/*--------------------FIRST_BLOCK---------------------*/
+
+.frt_block {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/image/bg_sign_up.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+
+.green_rec {
+    background: linear-gradient(180deg, rgba(100, 231, 54, 0.86) 35.21%, rgba(199, 249, 204, 0.35) 100%);
+    transform: rotate(-19.04deg);
+    height: 200vh;
+    width: 35%;
+    position: absolute;
+    left: 8%;
+    top: -25%;
+
+}
+
+.head_menu {
+    display: inline-block;
+    flex-direction: column;
+    margin: 3% 0% 0% 5%;
+    max-width: 125px;
+    z-index: 2;
+    position: relative;
+
+}
+
+.header_logo a {
+    font-family: 'Affect';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    color: var(--txt-clr);
+}
+
+.menu_list li {
+    font-family: 'Affect';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 294% */
+    letter-spacing: -0.03em;
+    color: var(--txt-clr);
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.menu_list li a {
+    text-decoration: none;
+    color: var(--txt-clr);
+    transition: var(--transition);
+
+}
+
+.menu_list {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.show-link {
+    height: 120px;
+    transition: var(--transition);
+}
+
+._90deg {
+    transform: rotate(180deg);
+}
+
+.lift {
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+.lion {
+    display: flex;
+    width: 950px;
+    height: 534.29px;
+    align-content: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scd_block {
+    height: 100vh;
+    width: 100%;
+    background-color: blue;
+    position: relative;
+    z-index: 1;
+}
+
+.thd_block {
+    height: 100vh;
+    width: 100%;
+    background-color: yellow;
+}
+
+.fth_block {
+    height: 100vh;
+    width: 100%;
+    background-color: brown;
+}
+
+.fvh_block {
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+}
